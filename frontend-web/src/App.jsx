@@ -5,6 +5,8 @@ import Recipe from './pages/Recipe/Recipe';
 import Login from './pages/Login/Login';
 import MyPage from './pages/MyPage/MyPage';
 import ProfileEdit from './pages/ProfileEdit/ProfileEdit'; // 새로운 컴포넌트 import
+import RecipeSuggest from './pages/RecipeSuggest/RecipeSuggest';
+import RateRecipePage from './pages/RateRecipePage/RateRecipePage';
 import './App.css';
 
 // 보호된 라우트 컴포넌트
@@ -59,6 +61,18 @@ function App() {
                 <ProfileEdit />
               </ProtectedRoute>
             }
+          />
+          <Route path="/function1" 
+            element={
+              <RecipeSuggest />
+            } 
+          />
+          <Route path="/function2" 
+            element={
+            <ProtectedRoute>
+              <RateRecipePage />
+            </ProtectedRoute>
+            } 
           />
         </Routes>
       </div>

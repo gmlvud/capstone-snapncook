@@ -54,8 +54,8 @@ const Navbar = ({ setIsLoggedIn }) => {  // props로 setIsLoggedIn 받기
           <li className={styles.navItem}>
             <Link to="/">메뉴</Link>
             <div className={styles.dropdown}>
-              <Link to="/function1">기능1</Link>
-              <Link to="/function2">기능2</Link>
+              <Link to="/function1">재료투 레시피</Link>
+              <Link to="/function2">리뷰하기</Link>
               <Link to="/function3">기능3</Link>
             </div>
           </li>
